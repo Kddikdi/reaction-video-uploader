@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Reaction Video Uploader</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main>
+<header>
+  <h1>Reaction Video Uploader</h1>
+  <nav><a href="index.html">Home</a><a href="privacy.html">Privacy Policy</a><a href="terms.html">Terms of Service</a></nav>
+</header>
+
+<p>Reaction Video Uploader is a private, internal tool used only by the owner of a single YouTube channel.
+It uploads the owner's own manga reader-reaction videos to the owner's own YouTube channel
+using the <strong>YouTube Data API</strong> (YouTube API Services).</p>
+<p class="ja">Reaction Video Uploader は、1つのYouTubeチャンネルの持ち主だけが使う内部ツールです。
+持ち主が作った漫画の反応集動画を、YouTube Data API（YouTube API Services）で持ち主自身のチャンネルに投稿します。</p>
+
+<h2>What it does / できること</h2>
+<ul>
+  <li>Uploads a finished video with its title, description, tags and custom thumbnail
+    (<code>videos.insert</code>, <code>thumbnails.set</code>).<br><span class="ja">完成した動画を、タイトル・説明文・タグ・サムネイルを付けて投稿します。</span></li>
+  <li>Schedules the video to be published at a fixed time each day (<code>status.publishAt</code>).<br><span class="ja">毎日決まった時刻に公開されるよう予約します。</span></li>
+  <li>Requests only the <code>https://www.googleapis.com/auth/youtube.upload</code> scope.<br><span class="ja">使う権限は動画の投稿（youtube.upload）だけです。</span></li>
+</ul>
+
+<h2>Who can use it / 使う人</h2>
+<p>Only the channel owner, who authorizes the tool with their own Google account through OAuth 2.0.
+The tool is not offered, sold or distributed to anyone else, and it does not access other users' data.</p>
+<p class="ja">使うのはチャンネルの持ち主だけで、本人のGoogleアカウントでOAuth 2.0の許可をして使います。ほかの人には提供・販売・配布せず、ほかのユーザーのデータにも触れません。</p>
+
+<p>By using this tool, the user agrees to be bound by the
+<a href="https://www.youtube.com/t/terms">YouTube Terms of Service</a>.
+See also our <a href="privacy.html">Privacy Policy</a> and the
+<a href="https://policies.google.com/privacy">Google Privacy Policy</a>.</p>
+
+<footer>This tool uses YouTube API Services. YouTube is a trademark of Google LLC. This site is not affiliated with or endorsed by Google.</footer>
+</main>
+</body>
+</html>
