@@ -10,3 +10,4 @@ nav a { margin-right: 16px; }
 a { color: var(--accent); }
 .ja { color: var(--muted); }
 footer { margin-top: 48px; border-top: 1px solid var(--line); padding-top: 16px; font-size: .9rem; color: var(--muted); }
+code { overflow-wrap: anywhere; }
