@@ -12,7 +12,7 @@
   <h1>Privacy Policy</h1>
   <nav><a href="index.html">Home</a><a href="privacy.html">Privacy Policy</a><a href="terms.html">Terms of Service</a></nav>
 </header>
-<p>Last updated: 2026-11-19</p>
+<p>Last updated: 2026-11-19 (TikTok added)</p>
 
 <p>This Privacy Policy describes how Reaction Video Uploader ("the tool") handles information.
 The tool is a private, internal tool used only by the owner of a single YouTube channel.</p>
@@ -25,33 +25,43 @@ Google's handling of data is described in the
 <a href="https://policies.google.com/privacy">Google Privacy Policy</a>.</p>
 <p class="ja">本ツールはYouTube API Servicesを使用します。本ツールを使うことで、YouTube利用規約に同意したものとします。Googleによるデータの扱いはGoogleプライバシーポリシーをご覧ください。</p>
 
+<h2>TikTok</h2>
+<p>The tool uses TikTok for Developers APIs (Login Kit and Content Posting API). By using the tool, the user agrees to the
+<a href="https://www.tiktok.com/legal/terms-of-service">TikTok Terms of Service</a>. TikTok's handling of data is described in the
+<a href="https://www.tiktok.com/legal/privacy-policy">TikTok Privacy Policy</a>.</p>
+<p class="ja">本ツールはTikTok for DevelopersのAPI（Login Kit・Content Posting API）を使用します。本ツールを使うことで、TikTok利用規約に同意したものとします。TikTokによるデータの扱いはTikTokプライバシーポリシーをご覧ください。</p>
+
 <h2>Information the tool accesses / 扱う情報</h2>
 <ul>
   <li>An OAuth 2.0 access token and refresh token for the owner's Google account, limited to the
     <code>youtube.upload</code> scope.<br><span class="ja">持ち主のGoogleアカウントのOAuth 2.0のトークン（youtube.upload の権限のみ）。</span></li>
   <li>The IDs and URLs of the videos the tool uploaded, returned by the API.<br><span class="ja">本ツールが投稿した動画のIDとURL。</span></li>
+  <li>For TikTok: an OAuth access token and refresh token for the owner's TikTok account (scopes <code>user.info.basic</code>,
+    <code>video.upload</code>, <code>video.publish</code>), the account's display name and open ID, the posting options returned by the
+    creator info endpoint (available privacy levels, interaction settings, maximum video length), and the publish IDs and status of the posts the tool made.<br><span class="ja">TikTok: 持ち主のTikTokアカウントのOAuthトークン（user.info.basic・video.upload・video.publish の権限）、アカウントの表示名とopen ID、投稿者情報で返る投稿の選択肢（選べる公開範囲・コメント等の設定・動画の長さの上限）、本ツールが行った投稿のIDと状態。</span></li>
 </ul>
-<p>The tool does not read, collect or store any other YouTube data, and it does not access data of any other user or channel.</p>
-<p class="ja">それ以外のYouTubeのデータは読み取り・収集・保存せず、ほかのユーザーやチャンネルのデータにも触れません。</p>
+<p>The tool does not read, collect or store any other YouTube or TikTok data, and it does not access data of any other user, channel or account.</p>
+<p class="ja">それ以外のYouTube・TikTokのデータは読み取り・収集・保存せず、ほかのユーザー・チャンネル・アカウントのデータにも触れません。</p>
 
 <h2>How the information is used, stored and shared / 使い方・保存・共有</h2>
 <ul>
-  <li>The token is used only to upload the owner's own videos and thumbnails and to schedule their publication.<br><span class="ja">トークンは、持ち主自身の動画とサムネイルの投稿と、公開の予約にだけ使います。</span></li>
-  <li>The token and the uploaded video IDs are stored only on the owner's own computer. They are not sent to any server other than Google's APIs.<br><span class="ja">トークンと動画のIDは持ち主のパソコンにだけ保存し、GoogleのAPI以外には送りません。</span></li>
+  <li>The tokens are used only to upload the owner's own videos (and YouTube thumbnails) and to schedule or confirm their publication.<br><span class="ja">トークンは、持ち主自身の動画とサムネイルの投稿と、公開の予約にだけ使います。</span></li>
+  <li>The token and the uploaded video IDs are stored only on the owner's own computer. They are not sent to any server other than Google's and TikTok's APIs.<br><span class="ja">トークンと動画のIDは持ち主のパソコンにだけ保存し、Google・TikTokのAPI以外には送りません。</span></li>
   <li>No information is sold, shared with or disclosed to third parties. No cookies or analytics are used.<br><span class="ja">第三者への販売・共有・開示はしません。Cookieやアクセス解析も使いません。</span></li>
 </ul>
 
 <h2>Revoking access and deleting data / 許可の取り消しと削除</h2>
 <p>Access can be revoked at any time from the Google security settings page:
 <a href="https://security.google.com/settings/security/permissions">https://security.google.com/settings/security/permissions</a>.
-Deleting the locally stored token file removes all stored authorization data.</p>
-<p class="ja">許可はGoogleのセキュリティ設定ページからいつでも取り消せます。パソコンに保存したトークンのファイルを消すと、保存した許可の情報はすべて消えます。</p>
+TikTok access can be revoked at any time in the TikTok app (Settings and privacy &gt; Security &gt; Apps and services permissions).
+Deleting the locally stored token files removes all stored authorization data.</p>
+<p class="ja">Googleの許可はGoogleのセキュリティ設定ページから、TikTokの許可はTikTokアプリの「設定とプライバシー」→「セキュリティ」→「アプリとサービスの権限」から、いつでも取り消せます。パソコンに保存したトークンのファイルを消すと、保存した許可の情報はすべて消えます。</p>
 
 <h2>Contact / 連絡先</h2>
 <p>Questions about this policy can be sent through the Issues page of the repository that hosts this site.</p>
 <p class="ja">このポリシーについてのお問い合わせは、このサイトのリポジトリの Issues からお願いします。</p>
 
-<footer>This tool uses YouTube API Services. YouTube is a trademark of Google LLC.</footer>
+<footer>This tool uses YouTube API Services and TikTok for Developers APIs. YouTube is a trademark of Google LLC. TikTok is a trademark of ByteDance Ltd.</footer>
 </main>
 </body>
 </html>
